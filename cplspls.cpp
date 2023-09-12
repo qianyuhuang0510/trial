@@ -29,7 +29,9 @@ vector<State> ParseLine(string line) {
 //       }
       switch(n){
         case 0: row.push_back(State::kEmpty);
+          break;
         default: row.push_back(State::kObstacle);
+          break;
       }
     }
     return row;
